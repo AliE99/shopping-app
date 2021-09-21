@@ -18,7 +18,7 @@ class ProductsOverviewScreen extends StatelessWidget {
         description: 'A nice pair of trousers.',
         price: 59.99,
         imageUrl:
-            'https://ae01.alicdn.com/kf/Hbfdf157c02aa4b74b8a103b7f65e91861/Men-s-Classic-Striped-Dress-Trousers-Korean-Ankle-Length-Suit-Pants-Men-Business-Fomal-Office-Trousers.jpg_Q90.jpg_.webp'),
+            'https://m.media-amazon.com/images/I/61FjkEaXTNL._UX466_.jpg'),
     Product(
       id: 'p3',
       title: 'Yellow Scarf',
