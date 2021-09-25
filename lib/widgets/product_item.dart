@@ -31,13 +31,14 @@ class ProductItem extends StatelessWidget {
             textAlign: TextAlign.center,
           ),
           leading: FavoriteButton(
+            isFavorite: product.isFavorite,
             iconSize: 40.0,
             valueChanged: (_isFavorite) {
               product.changeFavoriteStatus(_isFavorite);
-              print(product.isFavorite);
             },
           ),
           trailing: IconButton(
+            onPressed: () {},
             color: Colors.white,
             icon: Icon(Icons.add_shopping_cart_outlined),
           ),

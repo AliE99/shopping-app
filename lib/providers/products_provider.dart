@@ -36,8 +36,28 @@ class ProductsProvider with ChangeNotifier {
     ),
   ];
 
-  List<Product> get items {
+  // var _favoriteOnly = false;
+
+  // void showAll() {
+  //   _favoriteOnly = false;
+  //   notifyListeners();
+  // }
+  //
+  // void showFavoritesOnly() {
+  //   _favoriteOnly = true;
+  //   notifyListeners();
+  // }
+
+  List<Product> get getItems {
+    // if (_favoriteOnly) {
+    // return _items.where((element) => element.isFavorite).toList();
+    // } else {
     return [..._items];
+    // }
+  }
+
+  List<Product> get getFavoriteItems {
+    return _items.where((element) => element.isFavorite).toList();
   }
 
   Product findById(String id) {
